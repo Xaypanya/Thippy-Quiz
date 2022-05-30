@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #5041d8;
+    color: #fff;
+    font-family: inherit;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+.home header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+}
+
+.home header img {
+    margin-right: 7px;
+    width: 40px;
+    border: 2px solid #fff;
+}
+
+.home header h2 {
+    font-size: 1.8rem;
+    transform: translateY(-5px);
+    color: #fff;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.home main {
+    text-align: center;
+    width: 100%;
+}
+
+
+.home main .questionCard__container {
+    margin: 30px auto;
+    display: grid;
+    max-width: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+
+
+
+.home main .questionCard:hover {
+    transition: .3s ease-in-out;
+    transform: scale(1.08);
+}
+
+.home main .questionCard:hover img{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}   
+
+.home main .questionCard:active {
+    opacity: 70%;
+}
+
+.home main .questionCard img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) { 
+    .home main .questionCard__container {
+        margin: 10px auto;
+        display: grid;
+        max-width: 80%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) { 
+    .home main .questionCard__container {
+        margin: 10px auto;
+        display: grid;
+        max-width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+
+}
+

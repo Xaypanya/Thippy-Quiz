@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@500;700&display=swap');
+
+* , body {
+  font-family: 'Noto Serif Lao', serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  transition: .3s all;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-45deg, #5041d8, #e73c7e, #5041d8 ,#e73c7e);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+
+.btn{
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 3px 15px;
+  margin: 10px 0px;
+  outline: none;
+  border: 0px;
+  color: #5041d8;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn:active {
+  opacity: 70%;
+}
+
